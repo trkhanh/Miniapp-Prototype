@@ -1,0 +1,17 @@
+.mini-app-2 { padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+
+.mini-app-2 h2 { color: #222; }
+
+.input-group { display:flex; gap:8px; margin-top:12px; }
+
+.todo-input { padding:8px; border:1px solid #ddd; border-radius:6px; flex:1 }
+
+.btn-primary { padding:8px 12px; border:none; background:#1976d2; color:#fff; border-radius:6px }
+
+.todo-list { margin-top:12px; list-style:none; padding-left:0 }
+
+.todo-item { display:flex; justify-content:space-between; align-items:center; padding:8px 12px; border-bottom:1px solid #f0f0f0 }
+
+.btn-remove { background:transparent; border:none; color:#e53935; cursor:pointer }
+
+.empty-message { color:#777; margin-top:8px }

@@ -1,0 +1,32 @@
+.mini-app-1 {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.mini-app-1 h2 {
+  color: #222;
+}
+
+.counter-box {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-primary, .btn-secondary, .btn-danger {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary { background: #4caf50; color: #fff; }
+.btn-secondary { background: #2196f3; color: #fff; }
+.btn-danger { background: #f44336; color: #fff; }
+
+.info-box { margin-top: 18px; }
+
+.info-box ul { margin-left: 18px; }
