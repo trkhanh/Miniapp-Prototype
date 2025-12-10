@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mini App WC Demo</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Roboto, 'Segoe UI', sans-serif; margin:24px; }
+      header { margin-bottom:18px }
+      .row { display:flex; gap:18px; flex-wrap:wrap }
+      .container { width:320px }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Web Component Mini-App Demo</h1>
+      <p>This demo shows `dashboard-widget` as a standalone Web Component.</p>
+    </header>
+
+    <section class="row">
+      <div class="container">
+        <h3>Instance A (user-id=1)</h3>
+        <dashboard-widget user-id="1" theme="light" id="widgetA"></dashboard-widget>
+      </div>
+
+      <div class="container">
+        <h3>Instance B (user-id=2)</h3>
+        <dashboard-widget user-id="2" theme="dark" id="widgetB"></dashboard-widget>
+      </div>
+    </section>
+
+    <script type="module" src="./dashboard-widget.js"></script>
+
+    <script>
+      // Listen to events from the component
+      document.getElementById('widgetA').addEventListener('data-loaded', (evt) => {
+        console.log('Shell got data from widgetA', evt.detail);
+      });
+
+      // Example: change attribute after 5s
+      setTimeout(() => {
+        const w = document.querySelector('#widgetB');
+        if (w) w.setAttribute('theme', 'light');
+      }, 5000);
+    </script>
+  </body>
+</html>
