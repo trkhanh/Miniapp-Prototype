@@ -1,0 +1,91 @@
+
+> shell@1.0.0 start
+> webpack serve --config webpack.config.js
+
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: http://localhost:3000/
+<i> [webpack-dev-server] On Your Network (IPv4): http://192.168.1.17:3000/
+<i> [webpack-dev-server] On Your Network (IPv6): http://[fe80::f0e7:324d:6692:a08a]:3000/
+<i> [webpack-dev-server] Content not from webpack is served from '/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/packages/shell/public' directory
+<i> [webpack-dev-server] 404s will fallback to '/index.html'
+asset main.47a4458123e425155675.js 214 KiB [emitted] [immutable] (name: main)
+asset index.html 306 bytes [emitted]
+runtime modules 29.7 KiB 14 modules
+modules by path ../../node_modules/ 129 KiB
+  modules by path ../../node_modules/webpack-dev-server/client/ 71.8 KiB 16 modules
+  modules by path ../../node_modules/webpack/hot/*.js 5.17 KiB
+    ../../node_modules/webpack/hot/dev-server.js 1.94 KiB [built] [code generated]
+    ../../node_modules/webpack/hot/log.js 1.73 KiB [built] [code generated]
+    + 2 modules
+  modules by path ../../node_modules/html-entities/dist/esm/*.js 33.5 KiB
+    ../../node_modules/html-entities/dist/esm/index.js 4.98 KiB [built] [code generated]
+    ../../node_modules/html-entities/dist/esm/named-references.js 27.3 KiB [built] [code generated]
+    ../../node_modules/html-entities/dist/esm/numeric-unicode-map.js 491 bytes [built] [code generated]
+    ../../node_modules/html-entities/dist/esm/surrogate-pairs.js 738 bytes [built] [code generated]
+  ../../node_modules/ansi-html-community/index.js 4.16 KiB [built] [code generated]
+  ../../node_modules/events/events.js 14.5 KiB [built] [code generated]
+./src/index.ts 39 bytes [built] [code generated] [1 error]
+
+ERROR in ./src/index.ts
+Module build failed (from ../../node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/packages/shell/src/index.ts: Unexpected token, expected "," (7:8)
+
+   5 | const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+   6 | root.render(
+>  7 |   <React.StrictMode>
+     |         ^
+   8 |     <App />
+   9 |   </React.StrictMode>
+  10 | );
+    at constructor (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:367:19)
+    at TypeScriptParserMixin.raise (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:6624:19)
+    at TypeScriptParserMixin.unexpected (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:6644:16)
+    at TypeScriptParserMixin.expect (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:6924:12)
+    at TypeScriptParserMixin.tsParseDelimitedListWorker (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:7933:14)
+    at TypeScriptParserMixin.tsParseDelimitedList (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:7910:25)
+    at TypeScriptParserMixin.tsParseBracketedList (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:7950:25)
+    at TypeScriptParserMixin.tsParseTypeParameters (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:8108:24)
+    at /home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:9845:29
+    at TypeScriptParserMixin.tryParse (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:6932:20)
+    at TypeScriptParserMixin.parseMaybeAssign (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:9843:24)
+    at /home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10864:39
+    at TypeScriptParserMixin.allowInAnd (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12500:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10864:17)
+    at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12567:17)
+    at TypeScriptParserMixin.parseExprListItem (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12249:18)
+    at TypeScriptParserMixin.parseCallExpressionArguments (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:11316:22)
+    at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:11250:29)
+    at TypeScriptParserMixin.parseSubscript (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:11184:19)
+    at TypeScriptParserMixin.parseSubscript (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:9329:18)
+    at TypeScriptParserMixin.parseSubscripts (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:11158:19)
+    at TypeScriptParserMixin.parseExprSubscripts (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:11149:17)
+    at TypeScriptParserMixin.parseUpdate (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:11130:21)
+    at TypeScriptParserMixin.parseMaybeUnary (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:11110:23)
+    at TypeScriptParserMixin.parseMaybeUnary (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:9890:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10963:61)
+    at TypeScriptParserMixin.parseExprOps (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10968:23)
+    at TypeScriptParserMixin.parseMaybeConditional (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10945:23)
+    at TypeScriptParserMixin.parseMaybeAssign (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10895:21)
+    at TypeScriptParserMixin.parseMaybeAssign (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:9839:20)
+    at TypeScriptParserMixin.parseExpressionBase (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10844:39
+    at TypeScriptParserMixin.allowInAnd (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12495:16)
+    at TypeScriptParserMixin.parseExpression (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10844:17)
+    at TypeScriptParserMixin.parseStatementContent (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12971:23)
+    at TypeScriptParserMixin.parseStatementContent (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:9569:18)
+    at TypeScriptParserMixin.parseStatementLike (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12843:17)
+    at TypeScriptParserMixin.parseModuleItem (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12820:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:13392:36)
+    at TypeScriptParserMixin.parseBlockBody (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:13385:10)
+    at TypeScriptParserMixin.parseProgram (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12698:10)
+    at TypeScriptParserMixin.parseTopLevel (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:12688:25)
+    at TypeScriptParserMixin.parse (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:14568:25)
+    at TypeScriptParserMixin.parse (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:10183:18)
+    at parse (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/parser/lib/index.js:14602:38)
+    at parser (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/kao/Workspaces/Miniapp-Prototype/micro-frontend-monorepo-moduleFederation/node_modules/@babel/core/lib/transformation/index.js:22:50)
+
+webpack 5.103.0 compiled with 1 error in 1237 ms
