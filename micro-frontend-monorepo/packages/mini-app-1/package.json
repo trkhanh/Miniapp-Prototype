@@ -1,0 +1,28 @@
+{
+  "name": "mini-app-1",
+  "version": "1.0.0",
+  "description": "Mini App 1 for the micro-frontend architecture",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "webpack serve --config webpack.config.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "jest": "^27.0.6",
+    "babel-loader": "^8.2.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "author": "",
+  "license": "MIT"
+}
